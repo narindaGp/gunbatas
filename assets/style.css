@@ -128,3 +128,36 @@ nav {
   height: 100vh;
 
 }
+
+.text-color{
+  color: goldenrod;
+}
+
+.aborder {
+  border: 1px solid rgba(47, 79, 79, 0.507);
+}
+
+@media screen and (max-width: 992px) {
+  #requirements h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1rem ;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shadow{
+    padding-top: 3rem;
+    text-align: center;
+  }
+  #requirements h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .py-3{
+    padding-top: .4rem;
+    padding-bottom: 0.4rem;
+  }
+}
