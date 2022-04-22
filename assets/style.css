@@ -211,6 +211,35 @@ footer{
   background-color: black;
 }
 
+footer a{
+  color: antiquewhite;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-footer{
+  flex-grow: 1;
+  text-align: end;
+}
+
+.menu-footer a{
+  margin: 0 0.5rem;
+}
+
+hr {
+  color: silver;
+}
+.claim {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(245, 245, 220, 0.356);
+}
+
 /* media query */
 @media screen and (max-width: 992px) {
   #requirements h2 {
