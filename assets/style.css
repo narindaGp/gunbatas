@@ -11,6 +11,10 @@ section {
   background-size: cover;
 }
 
+.test {
+  background-color: burlywood;
+}
+
 /* nav */
 nav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -56,7 +60,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.accordion .icon{
+.accordion .icon {
   margin-right: 1rem;
   width: 30px;
   height: 30px;
@@ -82,11 +86,11 @@ nav {
 }
 
 .panel :hover {
-  
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.747) , rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0));
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0));
 }
 
-.active-accordion{
+.active-accordion {
   margin-right: 10px;
   margin-top: 0px;
   margin-bottom: 0;
@@ -95,7 +99,7 @@ nav {
   background-color: rgba(127, 255, 212, 0);
   border: 1px solid antiquewhite;
   border-radius: 50%;
-  
+
   transition: all .5s ease-in;
 }
 
@@ -103,33 +107,38 @@ nav {
   width: 80vw;
 }
 
-.active-accordion .icon{
+.active-accordion .icon {
   background-color: antiquewhite;
 }
 
 /* system requirements */
-#requirements{
+#requirements {
   background-image: url(./pict/requirements.png);
 }
 
-.vignete{
+.vignete {
   background-image: url('./pict/top-score-bg.png');
+  background-size: cover;
   z-index: -999;
   width: 100vw;
   height: 100vh;
-  transform: scale(-1,1);
+  transform: scale(-1, 1);
 }
 
-.shadow{
+.reflect {
+  transform: scale(-1, 1);
+}
+
+.shadow {
+  transform: scale(-1, 1);
   padding-top: 20vh;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0));
-  transform: scale(-1,1);
   width: 100vw;
   height: 100vh;
 
 }
 
-.text-color{
+.text-color {
   color: goldenrod;
 }
 
@@ -137,26 +146,88 @@ nav {
   border: 1px solid rgba(47, 79, 79, 0.507);
 }
 
+/* top score */
+#top-score {
+  background-image: url(./pict/Black-Sand-Texture.jpg);
+  background-size: cover;
+}
+
+.bg-score-a {
+  max-width: 40vw;
+  height: 50vh;
+  text-align: justify;
+}
+
+.bg-score-b{
+  /* background-color: brown; */
+  max-width: 37vw;
+  height: 50vh;
+}
+
+.main-content{
+  text-align: center;
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 94%;
+  
+}
+.social-card {
+  background-color: rgb(40, 49, 49);
+  text-align: start;
+  width: 70%;
+  margin: 0px;
+  padding: 0.5em 1em;
+  border-radius: 1rem;
+}
+
+.scard-name p,
+.social-card span {
+  color: slategrey;
+}
+
+.scard-name h6 {
+  color: rgb(178, 202, 73);
+}
+
+.scard-pict .after-image {
+  background-color: goldenrod;
+  width: 140%;
+  height: 90%;
+  border-radius: 50%;
+  margin-top: 3px;
+  z-index: 3;
+}
+
+.scard-pict img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* media query */
 @media screen and (max-width: 992px) {
   #requirements h2 {
     width: 100%;
     text-align: center;
-    margin: 1rem ;
+    margin: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .shadow{
+  .shadow {
     padding-top: 3rem;
     text-align: center;
   }
+
   #requirements h2 {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .py-3{
+  .py-3 {
     padding-top: .4rem;
     padding-bottom: 0.4rem;
   }
