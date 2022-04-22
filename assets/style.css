@@ -206,6 +206,11 @@ nav {
   max-height: 100%;
 }
 
+/* footer */
+#footer{
+  background-color: black;
+}
+
 /* media query */
 @media screen and (max-width: 992px) {
   #requirements h2 {
