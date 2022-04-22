@@ -3,7 +3,26 @@
   padding: 0px;
 }
 
+/* assets */
+section{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
 /* nav */
 nav{
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* main screen */
+#main-screen{
+  background-image: url(./pict/main-bg.jpg);
+  color: antiquewhite;
+}
+
+.to-bottom{
+  position: absolute;
+  bottom: 0;
 }
