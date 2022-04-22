@@ -41,40 +41,23 @@ nav {
 #features {
   background-image: url(./pict/features.jpg);
   color: antiquewhite;
+  padding-top: 30vh;
 }
 
 .accordion {
   background-color: rgba(201, 123, 178, 0);
   color: rgb(178, 202, 73);
   cursor: pointer;
-  padding: 0 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
-.panel {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  transition: all .5 ease-in;
-}
-
-.panel p {
-  border-left: 1px solid antiquewhite;
-  margin-left: 15px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding: 0.7rem;
-  transition: all .5 ease-in;
-}
-
-.active-accordion{
-  margin-right: 10px;
-  margin-bottom: 0;
+.accordion .icon{
+  margin-right: 1rem;
   width: 30px;
   height: 30px;
   background-color: rgba(127, 255, 212, 0);
@@ -82,6 +65,37 @@ nav {
   border-radius: 50%;
   float: left;
   transition: all .5s ease-in;
+}
+
+.panel {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  transition: all .5 ease-in;
+}
+
+.panel p {
+  border-left: 1px solid antiquewhite;
+  margin: 0px;
+  padding: 0.7rem;
+  transition: all .5 ease-in;
+}
+
+.active-accordion{
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(127, 255, 212, 0);
+  border: 1px solid antiquewhite;
+  border-radius: 50%;
+  
+  transition: all .5s ease-in;
+}
+
+.active-accordion h5 {
+  width: 80vw;
 }
 
 .active-accordion .icon{
