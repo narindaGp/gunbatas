@@ -36,3 +36,9 @@ nav{
   #game-choice > .row {
     padding: 10% 0;
   }
+
+/* features */
+#features{
+  background-image: url(./pict/features.jpg);
+  color: antiquewhite;
+}
