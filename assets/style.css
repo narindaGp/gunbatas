@@ -114,16 +114,19 @@ nav {
 
 .vignete{
   background-image: url('./pict/top-score-bg.png');
+  background-size: cover;
   z-index: -999;
   width: 100vw;
   height: 100vh;
+}
+
+.reflect{
   transform: scale(-1,1);
 }
 
 .shadow{
   padding-top: 20vh;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0));
-  transform: scale(-1,1);
   width: 100vw;
   height: 100vh;
 
@@ -138,6 +141,10 @@ nav {
 }
 
 /* top score */
+#top-score {
+  background-image: url(./pict/Black-Sand-Texture.jpg);
+  background-size:cover;
+}
 
 /* media query */
 @media screen and (max-width: 992px) {
