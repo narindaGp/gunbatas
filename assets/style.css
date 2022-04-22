@@ -26,3 +26,13 @@ nav{
   position: absolute;
   bottom: 0;
 }
+
+/* game choice */
+#game-choice{
+  background-image: url(./pict/the-games-bg.jpg);
+  color: antiquewhite;
+}
+
+  #game-choice > .row {
+    padding: 10% 0;
+  }
