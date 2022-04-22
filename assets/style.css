@@ -32,3 +32,7 @@ nav{
   background-image: url(./pict/the-games-bg.jpg);
   color: antiquewhite;
 }
+
+  #game-choice > .row {
+    padding: 10% 0;
+  }
