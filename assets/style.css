@@ -81,6 +81,11 @@ nav {
   transition: all .5 ease-in;
 }
 
+.panel :hover {
+  
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.747) , rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0));
+}
+
 .active-accordion{
   margin-right: 10px;
   margin-top: 0px;
