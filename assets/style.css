@@ -122,7 +122,7 @@ nav {
   z-index: -999;
   width: 100vw;
   height: 100vh;
-  transform: scale(-1, 1);
+  
 }
 
 .reflect {
@@ -258,11 +258,46 @@ hr {
   #requirements h2 {
     width: 100%;
   }
+
+  .bg-score-a{
+    max-width: 95vw;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .bg-score-b{
+    max-width: 95vw;
+    /* text-align: center; */
+    align-items: center;
+  }  
+  
 }
 
 @media screen and (max-width: 576px) {
   .py-3 {
     padding-top: .4rem;
     padding-bottom: 0.4rem;
+  }
+
+  .bg-score-b{
+    max-width: 95vw;
+    /* text-align: center; */
+    align-items: center;
+  }
+
+  
+
+  .scard-pict .after-image {
+    background-color: goldenrod;
+    width: 120%;
+    height: 65%;
+    border-radius: 50%;
+    margin-top: 3px;
+    z-index: 3;
+  }
+
+  .social-card p{
+    margin-bottom: 0.5rem;
   }
 }
