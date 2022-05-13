@@ -5,70 +5,32 @@ class Player {
   }
 
   versusCom(){
+    const gunbatas = ['batu', 'kertas', 'gunting'];
     const comChoice = Math.floor(Math.random()*3);
-    if(comChoice == 0){
-      this.against = 'batu'
-    } else if (comChoice == 1){
-      this.against = 'kertas'
-    } else if (comChoice == 2){
-      this.against = 'gunting'
-    }
-
+    this.against = gunbatas[comChoice]   
+    
     console.log(comChoice, this.choice, this.against)
-    if (this.choice == 'batu') {
-      
-      switch (this.against) {
-        case 'batu':
-          return 'draw'
-          break;
-        case 'kertas':
-          return 'lose'
-          break;
-        case 'gunting':
-          return 'win'
-          break;
-      
-        default:
-          return 'cek input'
-          break;
-      }
-    } else if (this.choice == 'kertas') {
-      
-      switch (this.against) {
-        case 'batu':
-          return 'win'
-          break;
-        case 'kertas':
-          return 'draw'
-          break;
-        case 'gunting':
-          return 'lose'
-          break;
-      
-        default:
-          return 'cek input'
-          break;
-      }
-    } else if (this.choice == 'gunting') {
-      
-      switch (this.against) {
-        case 'batu':
-          return 'lose'
-          break;
-        case 'kertas':
-          return 'win'
-          break;
-        case 'gunting':
-          return 'draw'
-          break;
-      
-        default:
-          return 'cek input'
-          break;
-      }
-    } 
+    if (this.choice == comChoice) {
+      return 'draw'
+    } else if (this.choice - comChoice == 1 || this.choice - comChoice == -2) {
+      return 'win'
+    } else if (this.choice - comChoice == -1 || this.choice - comChoice == 2) {
+      return 'lose'
+    } else {
+      return 'error'
+    }
   }
 }
 
-const play = new Player('gunting')
-console.log(play.versusCom())
+class Computer extends Player{
+
+}
+
+function suit(choice){
+  // console.log(choice)
+  const gunbatas = ['batu', 'kertas', 'gunting'];
+  const play = new Player(choice);
+  console.log(play.versusCom())
+}
+
+
