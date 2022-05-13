@@ -217,6 +217,11 @@ nav {
   max-height: 100%;
 }
 
+/* newsletter subscriptions */
+#subscriptions{
+  background-color: #080A0B;
+}
+
 /* footer */
 footer{
   background-color: black;
