@@ -4,7 +4,17 @@ class Player {
     this.against = against;
   }
 
-  play(){
+  versusCom(){
+    const comChoice = Math.floor(Math.random()*3);
+    if(comChoice == 0){
+      this.against = 'batu'
+    } else if (comChoice == 1){
+      this.against = 'kertas'
+    } else if (comChoice == 2){
+      this.against = 'gunting'
+    }
+
+    console.log(comChoice, this.choice, this.against)
     if (this.choice == 'batu') {
       
       switch (this.against) {
@@ -60,5 +70,5 @@ class Player {
   }
 }
 
-const versus = new Player('gunting', 'batu')
-console.log(versus.play())
+const play = new Player('gunting')
+console.log(play.versusCom())
