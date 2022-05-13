@@ -9,7 +9,7 @@ class Player {
     const comChoice = Math.floor(Math.random()*3);
     this.against = gunbatas[comChoice]   
     
-    console.log(comChoice, this.choice, this.against)
+    console.log(gunbatas[this.choice], 'vs', this.against)
     if (this.choice == comChoice) {
       return 'draw'
     } else if (this.choice - comChoice == 1 || this.choice - comChoice == -2) {
@@ -27,8 +27,6 @@ class Computer extends Player{
 }
 
 function suit(choice){
-  // console.log(choice)
-  const gunbatas = ['batu', 'kertas', 'gunting'];
   const play = new Player(choice);
   console.log(play.versusCom())
 }
