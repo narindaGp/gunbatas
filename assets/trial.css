@@ -5,3 +5,12 @@ section{
 .go-back {
   color: #724C21;
 }
+
+.play img {
+  padding: 1rem;
+}
+
+.play img:hover {
+  background-color: #C4C4C4;
+  border-radius: 10%;
+}
