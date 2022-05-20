@@ -33,7 +33,7 @@ nav {
 
 /* main screen */
 #main-screen {
-  background-image: url(./pict/main-bg.jpg);
+  background-image: url(../pict/main-bg.jpg);
   color: antiquewhite;
 }
 
@@ -44,7 +44,7 @@ nav {
 
 /* game choice */
 #game-choice {
-  background-image: url(./pict/the-games-bg.jpg);
+  background-image: url(../pict/the-games-bg.jpg);
   color: antiquewhite;
 }
 
@@ -54,7 +54,7 @@ nav {
 
 /* features */
 #features {
-  background-image: url(./pict/features.jpg);
+  background-image: url(../pict/features.jpg);
   color: antiquewhite;
   padding-top: 30vh;
 }
@@ -124,11 +124,11 @@ nav {
 
 /* system requirements */
 #requirements {
-  background-image: url(./pict/requirements.png);
+  background-image: url(../pict/requirements.png);
 }
 
 .vignete {
-  background-image: url('./pict/top-score-bg.png');
+  background-image: url('../pict/top-score-bg.png');
   background-size: cover;
   z-index: -999;
   width: 100vw;
@@ -159,7 +159,7 @@ nav {
 
 /* top score */
 #top-score {
-  background-image: url(./pict/Black-Sand-Texture.jpg);
+  background-image: url(../pict/Black-Sand-Texture.jpg);
   background-size: cover;
 }
 
