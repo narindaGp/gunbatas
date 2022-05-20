@@ -6,11 +6,25 @@ section{
   color: #724C21;
 }
 
-.play img {
-  padding: 1rem;
+.gap-1 img {
+  padding: 2.5rem;
+  border-radius: 20%;
 }
 
-.play img:hover {
+.choiceActive, .gap-1 img:hover {
   background-color: #C4C4C4;
-  border-radius: 10%;
+}
+
+.result {
+  display: none;
+  background-color: #4C9654;
+  transform: rotate(-28.87deg);
+}
+
+.big-font {
+  font-size: 10em;
+}
+
+#resultDraw {
+  background-color: #035B0C;
 }
