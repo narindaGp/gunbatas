@@ -1,0 +1,20 @@
+{
+  "name": "gunbatas",
+  "version": "1.0.0",
+  "description": "untuk buat challenge 3 dari binar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narindaGp/gunbatas.git"
+  },
+  "keywords": [],
+  "author": "Narinda Giriputra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narindaGp/gunbatas/issues"
+  },
+  "homepage": "https://github.com/narindaGp/gunbatas#readme"
+}
