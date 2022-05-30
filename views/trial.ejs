@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="/css/trial.css">
+    <title>Trial game</title>
+  </head>
+  <body>
+    <section class="main-page vw-100 vh-100 container-fluid" id="trial-game">
+      <div class="row">
+        <div class="col d-flex m-3">
+          <a href="../index.html" class="fs-1 h1  nav-link go-back"> < </a>
+          <img src="/pict/logo 1.png" alt="">
+          <span class="text-uppercase fs-2 h1 my-auto mx-3 text-warning"> rock paper scissors </span>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col-md-5 d-flex flex-md-column align-items-center gap-1 player">
+          <span class="h2 text-uppercase fw-bold flex-sm-grow-1 w-100 text-center">player 1</span>
+          <button class="btn border-0 player m-0 p-0" id="playerBatu" onclick="suit(0)">
+            <img class="" src="/pict/batu 1.png" alt="">            
+          </button>
+          <button class="btn border-0 player m-0 p-0" id="playerKertas" onclick="suit(1)">
+            <img class="" src="/pict/kertas 1.png" alt="">
+          </button>
+          <button class="btn border-0 player m-0 p-0" id="playerGunting" onclick="suit(2)">
+            <img class="" src="/pict/gunting 1.png" alt="">
+          </button>
+        </div>
+
+        <div class="col-md-2 d-flex justify-content-center align-items-center text-uppercase text-white">
+          <span class="fw-bolder text-danger big-font" id="versus">VS</span>
+          <span class="result fs-1 h1 p-5 text-center rounded" id="resultWin"> Player 1 Win </span>
+          <span class="result fs-1 h1 p-5 text-center rounded" id="resultDraw"> Draw </span>
+          <span class="result fs-1 h1 p-5 text-center rounded" id="resultLose"> Com Win </span>
+        </div>
+        
+        <div class="col-md-5 d-flex flex-md-column align-items-center gap-1">
+          <span class="h2 text-uppercase fw-bold flex-sm-grow-1 w-100 text-center">com</span>
+          <img src="/pict/batu 1.png" id="rivalBatu" alt="">
+          <img src="/pict/kertas 1.png" id="rivalKertas" alt="">
+          <img src="/pict/gunting 1.png" id="rivalGunting" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <button type="reset" class="btn border-0 w-25" onclick="reset()">
+            <img width="25%" height="100%" src="/pict/refresh.png" alt=""> 
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="/js/trial.js"></script>
+  </body>
+</html>
