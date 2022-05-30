@@ -5,13 +5,19 @@ const Controller = require('../controller')
 // router.get('/', (req, res) => {
 //     res.send('Hello World! Gunbatas index routes la bla')
 // });
+
+
 router.get('/', (req, res) => {
-    // res.send('Hello World! Gunbatas index routes la bla')
     res.render('home')
 });
 
-// router.get('/', Controller.home);
+router.get('/trial', (req, res) => {
+    res.render('trial')
+});
 
+router.get('/login', (req, res) => {
+    res.render('login')
+});
 
 
 module.exports = router;
