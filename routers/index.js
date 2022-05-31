@@ -17,8 +17,9 @@ router.get('/trial', (req, res) => {
 
 router.get('/login', (req, res) => {
     res.render('login')
+    // res.send('login hello from router')
 });
 
-router.post('/login', (req, res))
+// router.post('/login', (req, res))
 
 module.exports = router;
