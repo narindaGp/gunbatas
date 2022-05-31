@@ -20,6 +20,10 @@ router.get('/login', (req, res) => {
     // res.send('login hello from router')
 });
 
-// router.post('/login', (req, res))
+router.post('/login', (req, res) => {
+    console.log(req.body)
+    res.send(req.body)
+    
+})
 
 module.exports = router;
