@@ -5,7 +5,7 @@ const router = require('./routers')
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/assets'))
-
+app.use(express.urlencoded({ extended: true }))
 
 app.use('/', router)
 
