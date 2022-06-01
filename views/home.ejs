@@ -3,49 +3,7 @@
 
   <body>
     <!-- navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-      <div class="container-fluid mx-5">
-        <a class="navbar-brand mb-0 h1" href="#">LOGO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
-                >HOME</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/work.html">WORK</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/about-me.html">ABOUT ME</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/signup.html">SIGN UP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/login">LOGIN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+    <%- include('./partials/navbar.ejs') %>
     
     <!-- welcome page/ main screen -->
     <section
@@ -449,34 +407,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="px-5 py-3">
-      <div class="menu-footer">
-        <div class="link-footer mx-5">
-          <a href="#main-screen">home</a>
-          <a href="#game-choice">about</a>
-          <a href="#features">game features</a>
-          <a href="#requirements">system requirements</a>
-          <a href="#top-score">quotes</a>
-        </div>
-        <div class="social-footer">
-          <a href=""><img src="/pict/facebook.svg" alt="" /></a>
-          <a href=""><img src="/pict/twitter.svg" alt="" /></a>
-          <a href=""><img src="/pict/Vector.svg" alt="" /></a>
-          <a href=""><img src="/pict/twitch.svg" alt="" /></a>
-        </div>
-      </div>
-      <hr />
-      <div class="claim">
-        <div>
-          <span>2018 yor fames, inc. all rights reserved</span>
-        </div>
-        <div>
-          <a href="">privacy policy |</a>
-          <a href="">terms of services |</a>
-          <a href="">code of conduct</a>
-        </div>
-      </div>
-    </footer>
+    <%- include('./partials/footer.ejs') %>
 
    <%- include('./partials/script.ejs') %>
   </body>
