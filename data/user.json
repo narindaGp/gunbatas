@@ -1,5 +1,6 @@
-[
-    {
+{
+"data":     [
+        {
     "email": "binarian@binar.fsw",
     "password": "berbinar"
     }, 
@@ -40,3 +41,5 @@
     "password": "UMNUxI"
     }
 ]
+
+    }

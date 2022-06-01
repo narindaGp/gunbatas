@@ -3,22 +3,22 @@ const router = express.Router();
 const Controller = require('../controller')
 const fs = require('fs')
 
-// router.get('/', (req, res) => {
-//     res.send('Hello World! Gunbatas index routes la bla')
-// });
-
+let isLogin = false
 
 router.get('/', (req, res) => {
     res.render('home')
 });
 
 router.get('/trial', (req, res) => {
-    res.render('trial')
+    if (isLogin) {
+        res.render('trial')      
+    } else {
+        res.render('restricted')
+    }
 });
 
 router.get('/login', (req, res) => {
     res.render('login')
-    // res.send('login hello from router')
 });
 
 router.post('/login', (req, res) => {
@@ -28,24 +28,28 @@ router.post('/login', (req, res) => {
     let isPassword = false
 
     users.forEach(user => {
-        console.log(user.email, email);
         if (user.email === email) {
             isUserEmail = true
-            if (user.password === password) {
-                isPassword = true
-            }
+        }
+        if (isUserEmail === true && user.password === password) {
+            isPassword = true
         }
     });
 
     if (isUserEmail === false) {
-        res.send('user not found')
+        // res.send('user not found')
+        res.render('restricted')
+    } 
+    
+    if (isPassword === false) {
+        // res.send('password incorrect')
+        res.render('restricted')
     } else {
-        if (isPassword === false) {
-            res.send('password incorrect')
-        } else {
-            res.send('login successfully')
-        }
+        isLogin = true
+        // res.send('login successfully')
+        res.render('home')
     }
+    
 })
 
 module.exports = router;
