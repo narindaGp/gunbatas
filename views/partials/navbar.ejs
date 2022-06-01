@@ -32,9 +32,12 @@
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
+            <a class="nav-link" href="./pages/signup.html"> <%= player %></a>
+          </li>
+          <li class="nav-items <%- player !== '' ? 'd-none' :'' ; %> ">
             <a class="nav-link" href="./pages/signup.html">SIGN UP</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item <%- player !== '' ? 'd-none' :'' ; %>">
             <a class="nav-link" href="/login">LOGIN</a>
           </li>
         </ul>
