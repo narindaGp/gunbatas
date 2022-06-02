@@ -1,45 +1,45 @@
 {
-"data":     [
+    "data": [
         {
-    "email": "binarian@binar.fsw",
-    "password": "berbinar"
-    }, 
-    {
-    "email": "lbarnewille1@so-net.ne.jp",
-    "password": "cjppzHP9Bh"
-    }, 
-    {
-    "email": "odrohane2@reddit.com",
-    "password": "dnFQDQ"
-    }, 
-    {
-    "email": "fapdell3@cbc.ca",
-    "password": "CZcwfnxHmgv"
-    }, 
-    {
-    "email": "mbushell4@google.nl",
-    "password": "lx4J7fZ"
-    }, 
-    {
-    "email": "dposnett5@oaic.gov.au",
-    "password": "kfhEksUD"
-    }, 
-    {
-    "email": "fferreli6@over-blog.com",
-    "password": "LgaWwtnInk"
-    }, 
-    {
-    "email": "gkubica7@trellian.com",
-    "password": "CGYWwK8z75G"
-    }, 
-    {
-    "email": "flaugier8@skyrock.com",
-    "password": "3y10IU6"
-    }, 
-    {
-    "email": "pshelsher9@epa.gov",
-    "password": "UMNUxI"
-    }
-]
+        "email": "binarian@binar.fsw",
+        "password": "berbinar"
+        }, 
+        {
+        "email": "lbarnewille1@so-net.ne.jp",
+        "password": "cjppzHP9Bh"
+        }, 
+        {
+        "email": "odrohane2@reddit.com",
+        "password": "dnFQDQ"
+        }, 
+        {
+        "email": "fapdell3@cbc.ca",
+        "password": "CZcwfnxHmgv"
+        }, 
+        {
+        "email": "mbushell4@google.nl",
+        "password": "lx4J7fZ"
+        }, 
+        {
+        "email": "dposnett5@oaic.gov.au",
+        "password": "kfhEksUD"
+        }, 
+        {
+        "email": "fferreli6@over-blog.com",
+        "password": "LgaWwtnInk"
+        }, 
+        {
+        "email": "gkubica7@trellian.com",
+        "password": "CGYWwK8z75G"
+        }, 
+        {
+        "email": "flaugier8@skyrock.com",
+        "password": "3y10IU6"
+        }, 
+        {
+        "email": "pshelsher9@epa.gov",
+        "password": "UMNUxI"
+        }
+    ]
 
-    }
+}
