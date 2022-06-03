@@ -12,9 +12,9 @@ router.get('/', (req, res) => {
 
 router.get('/trial', (req, res) => {
     if (isLogin) {
-        res.render('trial', { title: 'Trial Rock Paper Scissors', player: playerEmail})      
+        res.render('trial', { title: 'Trial Rock Paper Scissors' })      
     } else {
-        res.render('restricted')
+        res.render('restricted', { title: 'Restricted - Trial Rock Paper Scissors' })
     }
 });
 
