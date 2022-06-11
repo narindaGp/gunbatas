@@ -7,9 +7,7 @@ const routes = Router()
 const port = 3000
 
 
-routes.use('/', (req, res, next) => {
-  
-})
+routes.use('/', ())
 
 routes.listen(port, () => {
   console.log(`Gunbatas is online on port ${port}`)
