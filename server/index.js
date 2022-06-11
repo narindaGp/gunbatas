@@ -1,14 +1,16 @@
+const { Router } = require('express');
 const express = require('express')
-const app = express()
+// const { Router } = require('express')
+// const router =  express.Router();
+// const app = express()
+const routes = Router()
 const port = 3000
-const router = require('./routers')
 
-app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/assets'))
-app.use(express.urlencoded({ extended: true }))
 
-app.use('/', router)
+routes.use('/', (req, res, next) => {
+  
+})
 
-app.listen(port, () => {
+routes.listen(port, () => {
   console.log(`Gunbatas is online on port ${port}`)
 })
