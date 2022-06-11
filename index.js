@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import express  from 'express';
 // import client from './client';
 // import server from './server';
@@ -20,21 +19,3 @@ app.use("/api/v1", server);
 app.listen(port, () => {
   console.log(`Gunbatas app listening on port ${port}`);
 });
-=======
-const { Router } = require('express');
-const express = require('express')
-// const { Router } = require('express')
-// const router =  express.Router();
-// const app = express()
-const routes = Router()
-const port = 3000
-
-
-routes.use('/', (req, res, next) => {
-  
-})
-
-routes.listen(port, () => {
-  console.log(`Gunbatas is online on port ${port}`)
-})
->>>>>>> parent of ddfc754... separate client and server
