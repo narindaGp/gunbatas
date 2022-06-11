@@ -1,0 +1,30 @@
+section{
+  background-color: #9C835F;
+} 
+
+.go-back {
+  color: #724C21;
+}
+
+.gap-1 img {
+  padding: 2.5rem;
+  border-radius: 20%;
+}
+
+.choiceActive, .gap-1 img:hover {
+  background-color: #C4C4C4;
+}
+
+.result {
+  display: none;
+  background-color: #4C9654;
+  transform: rotate(-28.87deg);
+}
+
+.big-font {
+  font-size: 10em;
+}
+
+#resultDraw {
+  background-color: #035B0C;
+}
