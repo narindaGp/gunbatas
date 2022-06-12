@@ -30,15 +30,15 @@ class Model {
     });
     
     if (isUserEmail === false) {
-        cb('User not found')
+        cb({code: 401, message: 'User not found'})
     } 
     
     if (isPassword === false) {
-        cb('incorrect password')
+        cb({code: 401, message: 'Password incorrect'})
     } else {
         let isLogin = true
         playerEmail = email;
-        cb(null, email)
+        cb(null, {email})
 
     }
   }
