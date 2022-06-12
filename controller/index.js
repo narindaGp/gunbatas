@@ -5,7 +5,7 @@ const axios = require("axios");
 
 class Controller {
   static user = { isLogin: false, email: "" };
-  
+
   static home(req, res, next) {
     console.log(Controller.user);
     Model.home((err, data) => {
@@ -16,7 +16,6 @@ class Controller {
           player: Controller.user.email,
         });
     });
-    // res.render('home', { title: 'Gunbatas homepage', player: ''})
   }
 
   static trial(req, res, next) {
@@ -49,24 +48,21 @@ class Controller {
       data: data,
     });
 
-    Controller.user = { isLogin: true, email: "asdf@gmail.com" };
+    const userOutput = JSON.parse(user.config.data) 
+    const userEmail = userOutput.data.email
+
+    Controller.user = { isLogin: true, email: userEmail };
     res.redirect("/");
-    // Model.postLogin(data, (err, outcome) => {
-    //     if (err) res.render("restricted", { err });
-    //     else
-    //         title: "Login page",
-    //         player: outcome.playerEmail,
-    //       });
-    //   });
   }
 
-  static async actionLogin(req, res, next) {
+  static actionLogin(req, res, next) {
     const { email, password } = req.body;
     const data = { email: email, password: password };
 
     Model.postLogin(data, (err, outcome) => {
       if (err) res.render("restricted", { err });
-      else res.json(outcome);
+      else res.json({email: outcome});
+      console.log(outcome);
       res.end();
     });
   }
